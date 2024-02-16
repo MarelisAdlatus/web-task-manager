@@ -12,6 +12,7 @@
     <!-- Fonts -->
 
     <!-- Scripts -->
+    <script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
@@ -74,5 +75,6 @@
             @yield('content')
         </main>
     </div>
+    @yield('scripts')
 </body>
 </html>
