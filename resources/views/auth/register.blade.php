@@ -61,6 +61,18 @@
                             </div>
                         </div>
 
+                        <div class="row mb-3">
+                            <label for="timezone" class="col-md-4 col-form-label text-md-end">{{ __('Time zone') }}</label>
+
+                            <div class="col-md-5">
+                                <select id="timezone" class="form-select" name="timezone" required>
+                                    @foreach($timezones as $timezone)
+                                        <option value="{{ $timezone }}" {{ $timezone === $default_timezone_name ? 'selected' : '' }}>{{ $timezone }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">

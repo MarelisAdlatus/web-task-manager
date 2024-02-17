@@ -41,6 +41,18 @@ class RegisterController extends Controller
     }
 
     /**
+     * Show the application registration form.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function showRegistrationForm()
+    {
+        $timezones = timezone_identifiers_list();
+        $default_timezone_name = date_default_timezone_get();
+        return view('auth.register', compact(['timezones', 'default_timezone_name']));
+    }
+
+    /**
      * Get a validator for an incoming registration request.
      *
      * @param  array  $data
@@ -52,6 +64,7 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'timezone' => ['required', 'timezone:all'],
         ]);
     }
 
@@ -67,6 +80,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'timezone' => $data['timezone'],
         ]);
     }
 }
