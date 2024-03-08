@@ -184,11 +184,11 @@ And now you can login **Bitvise SSH Client** as IPv4: 172.20.173.115 with method
 # add repository
 marek@NTB-MAREK:~$ sudo add-apt-repository ppa:ondrej/php
 
-marek@NTB-MAREK:~$ sudo apt install php8.2 php8.2-fpm php8.2-gd php8.2-common php8.2-imagick php8.2-imap php8.2-xml php8.2-mbstring php8.2-curl php8.2-zip php8.2-bz2 php8.2-intl php8.2-ldap php-phpseclib php-php-gettext php8.2-mysql php8.2-gmp php8.2-bcmath php8.2-sqlite3
+marek@NTB-MAREK:~$ sudo apt install php8.2 php8.2-fpm php8.2-gd php8.2-common php8.2-imagick php8.2-imap php8.2-xml php8.2-mbstring php8.2-curl php8.2-zip php8.2-bz2 php8.2-intl php8.2-ldap php-phpseclib php-php-gettext php8.2-mysql php8.2-gmp php8.2-bcmath php8.2-sqlite3 php8.2-soap
 
-marek@NTB-MAREK:~$ sudo apt install php8.1 php8.1-fpm php8.1-gd php8.1-common php8.1-imagick php8.1-imap php8.1-xml php8.1-mbstring php8.1-curl php8.1-zip php8.1-bz2 php8.1-intl php8.1-ldap php-phpseclib php-php-gettext php8.1-mysql php8.1-gmp php8.1-bcmath php8.1-sqlite3
+marek@NTB-MAREK:~$ sudo apt install php8.1 php8.1-fpm php8.1-gd php8.1-common php8.1-imagick php8.1-imap php8.1-xml php8.1-mbstring php8.1-curl php8.1-zip php8.1-bz2 php8.1-intl php8.1-ldap php-phpseclib php-php-gettext php8.1-mysql php8.1-gmp php8.1-bcmath php8.1-sqlite3 php8.1-soap
 
-marek@NTB-MAREK:~$ sudo apt install php7.3 php7.3-fpm php7.3-gd php7.3-common php7.3-imagick php7.3-imap php7.3-xml php7.3-mbstring php7.3-curl php7.3-zip php7.3-bz2 php7.3-intl php7.3-ldap php-phpseclib php-php-gettext php7.3-mysql php7.3-gmp php7.3-bcmath php7.3-sqlite3
+marek@NTB-MAREK:~$ sudo apt install php7.3 php7.3-fpm php7.3-gd php7.3-common php7.3-imagick php7.3-imap php7.3-xml php7.3-mbstring php7.3-curl php7.3-zip php7.3-bz2 php7.3-intl php7.3-ldap php-phpseclib php-php-gettext php7.3-mysql php7.3-gmp php7.3-bcmath php7.3-sqlite3 php7.3-soap
 
 marek@NTB-MAREK:~$ sudo update-alternatives --config php
 There are 3 choices for the alternative php (providing /usr/bin/php).
